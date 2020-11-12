@@ -325,7 +325,7 @@
 
         <div class="row my-5">
           <div class="col-md-6 offset-md-3">
-            <div class="list-group text-center">
+            <div class="list-group text-center f-wrap">
               <button type="button" class="list-group-item list-group-item-action" onclick="show_video(1)">Video 01</a>
               <button type="button" class="list-group-item list-group-item-action" onclick="show_video(2)">Video 02</a>
               <button type="button" class="list-group-item list-group-item-action" onclick="show_video(3)">Video 03</a>
@@ -376,7 +376,8 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
 
       <!-- Modal Content (The Video) -->
-      <video class="modal-content" id="currentvideo"></video>
+      <video class="modal-content" id="currentvideo" autoplay="true" controls controlsList="nodownload">
+      </video>
 
     </div>
 

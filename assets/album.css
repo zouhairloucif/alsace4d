@@ -47,7 +47,6 @@ footer p {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 15; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -112,6 +111,20 @@ footer p {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+#currentvideo {
+  height: 90vh;
+  background-color: transparent !important;
+}
+
+.list-group-item {
+  width: 50%;
+}
+
+.f-wrap {
+  flex-flow: wrap;
+  -ms-flex-flow: wrap;
 }
 
 /* 100% Image Width on Smaller Screens */
