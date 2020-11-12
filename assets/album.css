@@ -122,9 +122,18 @@ footer p {
   width: 50%;
 }
 
+.list-group-item:hover {
+  background-color: #17a2b8;
+  color: #FFFFFF;
+}
+
 .f-wrap {
   flex-flow: wrap;
   -ms-flex-flow: wrap;
+}
+
+.clients {
+  max-width: 120px;
 }
 
 /* 100% Image Width on Smaller Screens */
