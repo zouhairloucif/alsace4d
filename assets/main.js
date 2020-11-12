@@ -1,18 +1,32 @@
-var modal = document.getElementById("imageModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var modalImg = document.getElementById("img");
-var captionText = document.getElementById("caption");
-
 function show_image(obj) {
-    modal.style.display = "block";
-    modalImg.src = obj.src;
+    $("#imageModal").modal('show');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    $("#img").attr("src", obj.src);
+}
+
+// When the user clicks on <span> (x), close the modal
+closefirstModal(){
+    $("#imageModal").modal('hide');
+}
+
+var videomodal = $("#videoModal");
+
+function show_video(id) {
+    $("#videoModal").modal("show");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    let modalVid = $("currentvideo");
+    modalVid.src = "./videos/vid-0" + id + ".mp4";
+}
+
+closesecondModal(){
+    $("#videoModal").modal('hide');
 }
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+$("#close-2").on("click", function () {
+    $("#videoModal").modal("hide");
+});
