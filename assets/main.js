@@ -17,9 +17,12 @@ function show_video(id) {
 
     // Get the image and insert it inside the modal - use its "alt" text as a caption
     $("#currentvideo").html('<source src="./assets/videos/vid-0' + id + '.mp4" type="video/mp4" />');
+    $("#currentvideo").get(0).load();
 }
 
 $("#close-2").on('click', function () {
+    $("#currentvideo").trigger('pause');
+    $("#currentvideo").html('');
     $("#videoModal").modal("hide");
 });
 
