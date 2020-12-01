@@ -129,11 +129,14 @@ footer p {
 
 .f-wrap {
   flex-flow: wrap;
-  -ms-flex-flow: wrap;
 }
 
 .clients {
   max-width: 120px;
+}
+
+.card.shadow:hover{
+  filter: brightness(0.9);
 }
 
 /* 100% Image Width on Smaller Screens */
